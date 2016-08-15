@@ -119,6 +119,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../libraries/caching.html">Caching Driver</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libraries/cli.html">CLI Library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libraries/content_negotiation.html">Content Negotiation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libraries/localization.html">Localization</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libraries/curlrequest.html">CURLRequest Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libraries/incomingrequest.html">IncomingRequest Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libraries/message.html">HTTP Messages</a></li>
@@ -153,6 +154,7 @@
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../helpers/index.html">Helpers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../helpers/inflector_helper.html">Inflector Helper</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../helpers/url_helper.html">URL Helper</a></li>
 </ul>
 </li>
@@ -275,6 +277,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../libraries/caching.html">Caching Driver</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libraries/cli.html">CLI Library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libraries/content_negotiation.html">Content Negotiation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libraries/localization.html">Localization</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libraries/curlrequest.html">CURLRequest Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libraries/incomingrequest.html">IncomingRequest Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libraries/message.html">HTTP Messages</a></li>
@@ -309,6 +312,7 @@
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../helpers/index.html">Helpers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../helpers/inflector_helper.html">Inflector Helper</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../helpers/url_helper.html">URL Helper</a></li>
 </ul>
 </li>
@@ -461,6 +465,25 @@ If $data is an array, then it loops over it, escaping each &#8216;value&#8217; o
 </table>
 <p>Loads a helper file.</p>
 <p>For full details, see the <a class="reference internal" href="helpers.html"><span class="doc">Helper Functions</span></a> page.</p>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<code class="descname">lang(string $line[, array $args]): string</code></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$line</strong> (<em>string</em>) &#8211; The line of text to retrieve</li>
+<li><strong>$args</strong> (<em>array</em>) &#8211; An array of data to substitute for placeholders.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Retrieves a locale-specific file based on an alias string.</p>
+<p>For more information, see the <a class="reference internal" href="../libraries/localization.html"><span class="doc">Localization</span></a> page.</p>
 </dd></dl>
 
 <dl class="function">
@@ -920,7 +943,7 @@ instance every time.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2014 - 2016, British Columbia Institute of Technology.
-       Last updated on Aug 09, 2016.
+       Last updated on Aug 15, 2016.
     </p>
   </div>
 
